@@ -19,7 +19,7 @@ def links() -> rx.Component:
                     "https://github.com/Daviferlo12"),
         
         link_button("Portafolio", 
-                    "Mi portafoio profecional donde alojo proyectoas de relevancia",
+                    "Mi portafolio profecional donde alojo proyectoas de relevancia",
                     "cyan", 
                     "#"),
         
@@ -36,5 +36,6 @@ def links() -> rx.Component:
                     "purple", "https://www.instagram.com"),
         
         
-        width= "100%"
+        width= "100%",
+        spacing="3"
     ) 
