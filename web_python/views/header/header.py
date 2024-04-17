@@ -2,6 +2,7 @@ import reflex as rx
 import web_python.styles.styles as styles
 from web_python.styles.styles import Size
 from web_python.styles.colors import text_color
+from web_python.styles.colors import Color
 from web_python.components.link_icon import link_icon
 from web_python.components.info_text import info_text
 
@@ -9,14 +10,22 @@ def header() -> rx.Component:
     return rx.vstack(
         
         rx.hstack(
-            rx.avatar(fallback="RX", size="5"),
-            rx.vstack(
+            rx.avatar(
+                fallback="DL",
+                size="7",
+                radius="full",
+                src= "Avatar.png",
+                color = text_color.BODY.value,
+                bg = Color.BACKGROUND.value,
+                border = "4px",
+                border_color=Color.PRIMARY.value
+                ),
+            
+            rx.vstack(  
                 rx.heading(
-                    "DAVID LOPEZ", 
-                    size="5",
-                    color = text_color.HEADER.value
-                    ),
-                
+                    "DAVID LOPEZ",
+                    size='7'
+                    ),  
                 rx.text(
                     "@daviferlo_",
                     margin_top="0px !important",
@@ -40,7 +49,8 @@ def header() -> rx.Component:
         ),
         rx.text(
             """Joven entusiasta y proactivo con habilidades destacadas en comunicación, trabajo en equipo y resolución de problemas. Capacidad para aprender rápidamente, adaptarse a entornos cambiantes. Experiencia en desarrollo de soluciones web y soporte. Apasionado por mejorar mis habilidades en el desarrollo de software, y dispuesto a asumir desafíos que me permitan crecer profesionalmente. ¡Bienvenid@!""",
-            color = text_color.BODY.value
+            color = text_color.BODY.value,
+            font_size = Size.MEDIUM.value
             ),
         spacing= "4",
         align_items = "start"

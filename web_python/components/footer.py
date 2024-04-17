@@ -9,7 +9,8 @@ from web_python.styles.colors import Color
 def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
-            src="/favicon.ico"
+            src="/logo_sin_fondo.png",
+            height=Size.VERY_BIG.value
         ),
         rx.text(
             f"© {datetime.date.today().year} David Lopez 😁",

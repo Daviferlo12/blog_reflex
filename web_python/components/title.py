@@ -5,6 +5,6 @@ from web_python.styles.styles import Size
 def title(text) -> rx.Component:
     return rx.heading(
         text,
-        size="5",
+        size= '5',
         style=styles.title_style
     )

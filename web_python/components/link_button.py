@@ -3,7 +3,7 @@ import web_python.styles.styles as styles
 from web_python.styles.styles import Size
 
 
-def link_button(title : str, body : str , color : str, url: str, disable = True) -> rx.Component:
+def link_button(title : str, body : str , url: str, disable = True) -> rx.Component:
     
     return rx.link(
         rx.button(
@@ -11,15 +11,17 @@ def link_button(title : str, body : str , color : str, url: str, disable = True)
                 rx.icon(
                     tag = "calendar",
                     width = Size.BIG.value,
-                    height = Size.BIG.value
+                    height = Size.BIG.value,
+                    margin = Size.MEDIUM.value
                 ),
                 rx.vstack(
                     rx.text(title, style= styles.botton_title_style),
                     rx.text(body, style=styles.botton_body_style),
-                    align_items = "start"
+                    spacing="0",
+                    align_items = "start",
+                    margin = Size.ZERO.value
                 )
             ),
-            color_scheme=color
         ),
         href=url,
         is_external = disable,

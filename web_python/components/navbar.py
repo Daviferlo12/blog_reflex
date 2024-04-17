@@ -10,7 +10,10 @@ def navbar() -> rx.Component:
         
         rx.box(
             rx.chakra.span("DAVI", color=Color.PRIMARY.value),
-            rx.chakra.span("FERLO", color = Color.SECONDARY.value)
+            rx.chakra.span("FERLO", color = Color.SECONDARY.value),
+            rx.chakra.span(" | DEVE", color = Color.PRIMARY.value),
+            rx.chakra.span("LOPER", color = Color.SECONDARY.value),
+            style=styles.navbar_title_style
         ),
 
         position = "sticky",
