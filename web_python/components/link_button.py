@@ -3,15 +3,15 @@ import web_python.styles.styles as styles
 from web_python.styles.styles import Size
 
 
-def link_button(title : str, body : str , url: str, disable = True) -> rx.Component:
+def link_button(title : str, body : str , url: str, image_ico : str, disable = True) -> rx.Component:
     
     return rx.link(
         rx.button(
             rx.hstack(
-                rx.icon(
-                    tag = "calendar",
-                    width = Size.BIG.value,
-                    height = Size.BIG.value,
+                rx.image(
+                    src = image_ico,
+                    width = Size.LARGE.value,
+                    height = Size.LARGE.value,
                     margin = Size.MEDIUM.value
                 ),
                 rx.vstack(

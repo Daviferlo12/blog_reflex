@@ -2,7 +2,12 @@ from enum import Enum
 
 
 class Font(Enum):
-    DEFAULT = "sans-serif"
-    TITLE = "sans-serif"
-    LOGO = "monospace"
+    DEFAULT = "Poppins"
+    TITLE = "Poppins"
+    LOGO = "Comfortaa"
     
+    
+class FontWeight(Enum):
+    LIGTH = "300"
+    MEDIUM = "500"
+    LARGE  = "600"

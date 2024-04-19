@@ -17,8 +17,8 @@ def header() -> rx.Component:
                 src= "Avatar.png",
                 color = text_color.BODY.value,
                 bg = Color.BACKGROUND.value,
-                border = "4px",
-                border_color=Color.PRIMARY.value
+                border = "solid 4px",
+                border_color=Color.SECONDARY.value
                 ),
             
             rx.vstack(  
@@ -29,12 +29,20 @@ def header() -> rx.Component:
                 rx.text(
                     "@daviferlo_",
                     margin_top="0px !important",
-                    color = text_color.BODY.value
+                    color = Color.PRIMARY.value
                     ),
                 rx.hstack(
-                    link_icon("https://www.linkedin.com/in/david-lopez69/"),
-                    link_icon("https://www.linkedin.com/in/david-lopez69/"),
-                    link_icon("https://www.linkedin.com/in/david-lopez69/")
+                    link_icon(
+                        "icons/linkedin.svg",
+                        "https://www.linkedin.com/in/david-lopez69/"),
+                    link_icon(
+                        "icons/github.svg",
+                        "https://github.com/Daviferlo12"),
+                    link_icon(
+                        "icons/instagram.svg",
+                        "https://www.instagram.com"),
+                    
+                        spacing= "4"
                     ),
                 align_items="start",
                 width = "100%"

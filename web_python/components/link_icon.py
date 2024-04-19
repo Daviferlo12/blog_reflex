@@ -2,11 +2,11 @@ import reflex as rx
 import web_python.styles.styles as styles
 from web_python.styles.styles import Size
 
-def link_icon(url : str) -> rx.Component:
+def link_icon(image_icon : str, url : str) -> rx.Component:
     return rx.link(
-        rx.icon(
-            tag="link",
-            size=15
+        rx.image(
+            src = image_icon,
+            width = Size.DEFAULT.value
         ),
         href = url,
         is_external= True 

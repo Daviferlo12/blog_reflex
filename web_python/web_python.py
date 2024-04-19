@@ -27,6 +27,11 @@ def index() -> rx.Component:
     )
      
 app = rx.App(
+    stylesheets= styles.STYLESHEETS,
     style= styles.BASE_STYLE
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title="DeiviCode | Aprendiendo a programas con python",
+    image="logo_sin_fondo.png"
+    )
