@@ -34,14 +34,20 @@ def header() -> rx.Component:
                 rx.hstack(
                     link_icon(
                         "icons/linkedin.svg",
-                        "https://www.linkedin.com/in/david-lopez69/"),
+                        "https://www.linkedin.com/in/david-lopez69/",
+                        "Linkedin"),
                     link_icon(
                         "icons/github.svg",
-                        "https://github.com/Daviferlo12"),
+                        "https://github.com/Daviferlo12",
+                        "GitHub"),
                     link_icon(
                         "icons/instagram.svg",
-                        "https://www.instagram.com"),
-                    
+                        "https://www.instagram.com",
+                        "Instagram"),
+                    link_icon(
+                        "icons/spotify.svg",
+                        "https://open.spotify.com/playlist/7MrXDFZZRXrkQCV5fB4z2H?si=4ac80250fb8d4b14",
+                        "Spotify"),
                         spacing= "4"
                     ),
                 align_items="start",

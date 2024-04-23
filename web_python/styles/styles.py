@@ -42,6 +42,8 @@ BASE_STYLE = {
         "border_radius" : Size.DEFAULT.value,
         "background_color" : Color.CONTENT.value,
         "color" : text_color.HEADER.value,
+        "white_space" : "normal",
+        "text_align" : "start",
         "_hover" : {
             "background_color" : Color.SECONDARY.value
         }

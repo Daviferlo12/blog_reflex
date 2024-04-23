@@ -10,7 +10,9 @@ def footer() -> rx.Component:
     return rx.vstack(
         rx.image(
             src="/logo_sin_fondo.png",
-            height=Size.VERY_BIG.value
+            width=Size.VERY_BIG.value,
+            heigth =Size.VERY_BIG.value,
+            alt = "Logotipo de David Lopez que dice \"DeiviCode\""
         ),
         rx.text(
             f"© {datetime.date.today().year} David Lopez 😁",

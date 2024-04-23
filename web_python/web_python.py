@@ -32,6 +32,6 @@ app = rx.App(
 )
 app.add_page(
     index,
-    title="DeiviCode | Aprendiendo a programas con python",
-    image="logo_sin_fondo.png"
+    title="DeiviCode | Aprendiendo a programar con python",
+    image="logo.jpeg"
     )
