@@ -19,7 +19,7 @@ def links() -> rx.Component:
         
         link_button("Portafolio", 
                     "Mi portafolio profecional donde alojo proyectoas de relevancia",
-                    "#",
+                    "davidlopezportafolio-david-lopezs-projects-a4db0fc2.vercel.app",
                     "icons/briefcase-solid.svg"),
         
         
